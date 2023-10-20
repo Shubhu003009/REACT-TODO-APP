@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import CustomForm from './Components/customForm'
 import TaskList from './Components/TaskList'
+import CustomForm from './Components/CustomForm'
 import EditForm from './Components/EditForm'
 import useLocalStorage from './hooks/useLocalStorage'
 
@@ -55,7 +55,7 @@ function App() {
             closeEditMode={closeEditMode}
           />
         )}
-
+  
         <CustomForm addTask={addTask}/>
         
         {tasks && <TaskList 
